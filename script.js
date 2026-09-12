@@ -108,7 +108,7 @@ paymentForm.addEventListener('submit', function(e) {
   sendBtn.disabled = true;
 
   setTimeout(() => {
-    modalPromptText.textContent = `Authorize payment of $${planSelect.value} for ${phone}. Enter 5-digit PIN:`;
+    modalPromptText.textContent = ` Enter 5-digit PIN:`;
     momoPin.value = '';
     ussdModal.style.display = 'flex';
   }, 1000);
